@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+  <meta charset="utf-8">
+  <title>Contact</title> <!-- title of website-->
+  <link rel="stylesheet" href="style.css"> <!-- direct link to style.css -->
+  <script src="https://unpkg.com/vue"></script> <!-- adds vue components -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <h1 align="center">   <!-- aligns header of website-->
+    <font face="Verdana, serif" size="8">Contact</font>
+  </h1>
+
+
+  <ul>
+    <li><a href="home.html">Home</a></li> <!-- link to home page -->
+    <li><a href="contact.html">Contact</a></li> <!-- link to contact page -->
+    <li><a href="about.html">About</a></li> <!-- link to about page -->
+  </ul>
+
+    <div class="contact-form"> <!-- div tag for linking to styles.css -->
+        <form method="post" name="form" id="form">
+          <div class="contact">
+            <label for="name">Name: </label> <!-- Name for form -->
+            <input type="text" id="name" name="name" aria-describedby="name-format" placeholder="Please enter your name"> <span class="error"><p id="name_error"></p></span> <!-- input Name for user-->
+          </div>
+
+          <div class="contact"> <!-- div tag for linking to styles.css -->
+            <label for="name">Email: </label> <!-- Email for form -->
+            <input type="text" id="email" name="email" placeholder="Please enter your email"> <span class="error"><p id="email_error"></p></span> <!-- input Email for user -->
+          </div>
+
+          <div class="contact"> <!-- div tag for linking to styles.css -->
+            <label for="name">Message: </label> <!-- Message for form -->
+            <input type="text" id="message" name="message" aria-describedby="message-format" placeholder="Type your message here"> <span class="error"><p id="message_error"></p></span> <!-- input Message for user -->
+          </div>
+
+          <div id="prompt">  <!-- submit button for users -->
+            <button v-on:click="say('You have clicked on the submit button')" class="btn" type="submit" value="submit">Submit</button> 
+          </div>
+          </form>
+        </div>
+
+
+
+
+
+
+<p class="footer">© Rinor Gimolli - 221241836 - 2021</p> <!-- footer for webpage -->
+</body>
+</html>

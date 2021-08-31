@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+  <meta charset="utf-8">
+  <title>Tech21</title> <!-- title of website-->
+  <link rel="stylesheet" href="style.css"> <!-- direct link to style.css -->
+  <script src="https://unpkg.com/vue"></script> <!-- adds vue components -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <h1 align="center">   <!-- aligns header of website-->
+    <font face="Verdana, serif" size="8">Tech21</font>
+  </h1>
+
+  <div id="app-4">     <!-- list of things i will talk about (in future) -->
+    <ol>
+      <li v-for="todo in todos">
+        {{ todo.text }}
+      </li>
+    </ol>
+  </div>
+
+  <script>
+    var app4 = new Vue({
+      el: '#app-4',
+      data: {
+        todos: [
+          { text: 'Topic 1' },
+          { text: 'Topic 2' },
+          { text: 'Topic 3' },
+          { text: 'Topic 4' },
+          { text: 'Topic 5' },
+        ]
+      }
+    })
+    </script>
+
+    <ul>
+      <li><a href="home.html">Home</a></li> <!-- link to home page -->
+      <li><a href="contact.html">Contact</a></li> <!-- link to contact page -->
+      <li><a href="about.html">About</a></li> <!-- link to about page -->
+    </ul>
+
+
+
+
+
+  <h2> 5G Data </h2> <!-- first heading for topics -->
+<p class="topic_one"></p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+     sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+
+
+
+
+
+<p class="footer">© Rinor Gimolli - 221241836 - 2021</p> <!-- footer for webpage -->
+</body>
+</html>
